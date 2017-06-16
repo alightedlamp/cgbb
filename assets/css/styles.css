@@ -1,76 +1,95 @@
 html {
-	box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.2em;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-	border-top: 5px solid #F6F000;
-}
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border-top: 5px solid #F6F000; }
+
 header {
-	margin-top: 4em;
-}
+  margin-top: 4em; }
+
 section.main {
-	padding: 2em 2em;
-}
+  padding: 2em 2em; }
+
 footer {
-	padding: 1em;
-	border-top: 5px solid #F6F000;
-	background-color: #F4F6C4;
-}
-p {
-	font-family: 'Quicksand', sans-serif;
-}
+  padding: 1em;
+  height: 75px;
+  background-color: #F6F000; }
 
 a {
-	color: #888;
-	text-decoration: none;
-	font-family: "Karla";
-}
+  color: #888;
+  text-decoration: none; }
+
 a:hover {
-	color: #F600C2;
-	/*border-bottom: 2px solid #F6F000;*/
-}
+  color: #F600C2;
+  transition: .25s;
+  /*border-bottom: 2px solid $yellow;*/ }
 
 /*section.main .social-links {
 	margin-top: 2em;
 }*/
-
 h1.title {
-	font-weight: normal;
-}
+  font-weight: normal; }
 
-img.logo {
-	text-align: center;
-	max-width: 400px;
-}
+div.logo {
+  text-align: center; }
+
+div.logo img {
+  max-width: 400px; }
+
 div.img {
-	margin: 4em auto;
-	width: 600px;
-}
+  margin: 4em auto;
+  width: 60%; }
+
 div.img img {
-	max-width: 100%;
-}
+  max-width: 100%; }
 
 ul.social-links {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	margin-top: 2em;
-	font-size: 1.2em;
-	font-weight: normal;
-}
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 2em; }
+
 ul.social-links li {
-	display: inline-block;
-	margin: 0;
-	width: 100px;
-}
+  display: inline-block;
+  margin: 0;
+  padding-right: 1em; }
+
+ul.social-links li:last-child {
+  padding-right: 0; }
+
+footer ul.social-links a {
+  color: #F600C2;
+  fill: #F600C2;
+  width: 40px; }
+
+footer ul.social-links svg {
+  width: 40px; }
+
+footer ul.social-links a:hover {
+  color: #F99500;
+  fill: #F99500; }
+
 div.clearfix {
-	clear: both;
-}
+  clear: both; }
+
 footer ul.social-links {
-	margin: 0;
-	font-size: .9em;
-}
+  margin-top: 10px;
+  font-size: .9em; }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+  div.logo img {
+    max-width: 50%; }
+
+  div.img {
+    margin: 0;
+    width: 100%; }
+
+  div.img img {
+    max-width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */
