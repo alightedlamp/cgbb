@@ -6,7 +6,7 @@ html {
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-size: 1.2em;
 	text-align: center;
 	padding: 0;
@@ -17,9 +17,10 @@ header {
 	margin-top: 4em;
 }
 section.main {
-	padding: 2em 2em;
+	padding: 2em 2em 0 2em;
 }
 footer {
+	margin-top: 4em;
 	padding: 1em;
 	height: 75px;
 	background-color: $yellow;
@@ -27,6 +28,7 @@ footer {
 
 a {
 	color: #888;
+	font-weight: 300;
 	text-decoration: none;
 }
 a:hover {
@@ -50,12 +52,16 @@ div.logo img {
 	max-width: 400px;
 }
 
-div.img {
+figure.img {
 	margin: 4em auto;
 	width: 60%;
 }
-div.img img {
+figure.img img {
 	max-width: 100%;
+}
+figure figcaption {
+	font-size: .8em;
+	color: 888;
 }
 
 ul.social-links {
@@ -100,11 +106,11 @@ footer ul.social-links {
   	div.logo img {
   		max-width: 50%;
   	}
-  	div.img {
-  		margin: 0;
+  	figure.img {
+  		margin: 3em 0;
   		width: 100%;
   	}
-  	div.img img {
+  	figure.img img {
   		max-width: 100%;
   	}
 }
