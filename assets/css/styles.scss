@@ -26,7 +26,7 @@ section.main {
 footer {
     font-size: .9em;
 	margin-top: 4em;
-	padding: 1.5em;
+	padding: 2em;
 	background-color: $yellow;
     line-height: 1.5em;
 }
@@ -110,6 +110,10 @@ footer div.contact {
     float: right;
     text-align: right;
     font-size: .9em;
+}
+footer div.section {
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 @media screen
