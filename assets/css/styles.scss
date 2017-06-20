@@ -2,6 +2,10 @@ $orange: #F99500;
 $pink: #F600C2;
 $yellow: #F6F000;
 
+html, body, p, footer {
+    margin: 0;
+    padding: 0;
+}
 html {
 	box-sizing: border-box;
 }
@@ -20,10 +24,12 @@ section.main {
 	padding: 2em 2em 0 2em;
 }
 footer {
+    font-size: .9em;
 	margin-top: 4em;
-	padding: 1em;
-	height: 75px;
+	padding: 1.5em;
+    height: 45px;
 	background-color: $yellow;
+    line-height: 1.5em;
 }
 
 a {
@@ -95,8 +101,15 @@ div.clearfix {
 	clear: both;
 }
 footer ul.social-links {
-	margin-top: 10px;
+    margin-top: 0;
+    float: left;
 	font-size: .9em;
+}
+footer div.contact {
+    margin-top: 0;
+    float: right;
+    text-align: right;
+    font-size: .9em;
 }
 
 @media screen
@@ -113,5 +126,11 @@ footer ul.social-links {
   	figure.img img {
   		max-width: 100%;
   	}
+    footer ul.social-links {
+        float: none;
+    }
+    footer div.contact {
+        float: none;
+    }
 }
 
